@@ -1,0 +1,126 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background-color: #181818;
+    color: #fff;
+	 overflow: hidden;
+	 font-size: 1.6rem;
+
+	 @include respond(medium-size) {
+		overflow: auto;
+  }
+}
+
+h1 {
+    font-weight: 300;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    @include respond(large-size) {
+        flex: 4;
+	 }
+	 @include respond(medium-size) {
+		justify-content: start;
+		margin-top: 2vh;
+  }
+}
+.right {
+    flex: 1;
+    @include respond(large-size) {
+        flex: 6;
+	 }
+	 @include respond(medium-size) {
+		display: none;
+  }
+}
+
+.signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1.6rem;
+
+    & form {
+        width: 80%;
+        padding-bottom: 3rem;
+    }
+
+    & .logo {
+		  margin-bottom: 8vh;
+		  @include respond(medium-size) {
+			margin-bottom: 2vh;
+	  }
+    }
+
+    & .logo img {
+        width: 300px;
+    }
+
+    & label {
+        font-size: 1.1rem;
+        line-height: 3.2rem;
+        font-weight: 500;
+    }
+
+    &__input-text {
+        margin-bottom: 2.1rem;
+        width: 100%;
+        border-radius: 2px;
+        background-color: #181818;
+        border: 1px solid #555;
+        color: #ccc;
+        padding: 0.8rem;
+        line-height: 1.3rem;
+    }
+
+	& .btn__primary-btn{
+		width: 100%;
+	}
+
+	& .btn__secondary-btn, .or-section, .links {
+		width: 60%;
+	}
+
+	& .links a {
+		color: #fff;
+		text-decoration: none;
+		margin-bottom: 1rem;
+		display: block;
+		text-align: center;
+		font-size: 1.4rem;
+	}
+
+	& .or-section{
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 1.9rem;
+		align-items: center;
+		
+		&__bar{
+			flex: auto;
+			border: none;
+			height: 1px;
+			background: grey;
+		}
+
+		& span{
+			color: #ccc;
+			padding: 0 1.3rem;
+		}
+	
+	}
+
+	
+}

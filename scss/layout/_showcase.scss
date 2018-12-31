@@ -1,0 +1,20 @@
+.showcase {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: url('https://image.ibb.co/cO9Lxq/login-bg.jpg') no-repeat center center / cover;
+	height: 100vh;
+
+	&__text{
+		font-size: 3rem;
+		width: 100%;
+		color: #fff;
+		margin-bottom: 1.5rem;
+	}
+
+	&.btn__secondary-btn{
+		width: 60%;
+		margin: auto;
+	}
+}
